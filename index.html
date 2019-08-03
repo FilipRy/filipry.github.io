@@ -89,7 +89,7 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">TU Wien</h3>
+            <h3 class="mb-0"><a href="https://www.tuwien.at/" target="_blank">TU Wien</a></h3>
             <div class="subheading mb-3">Diplom-Ingenieur (Master of Science) in Software Engineering/Internet Computing</div>
             <p>Coursework: Advanced Distributed Systems; Large-Scale Distributed Computing; Advanced Software & Services Engineering; Software Architecture; Algorithmics; Machine Learning; Artificial Intelligence; Formal Methods in Computer Science</p>
             <p>Thesis title: <a href="https://github.com/FilipRy/MasterThesis" target="_blank">Edge Blockchain Provisioning of Mobile Edge Computing Applications</a></p>
@@ -103,7 +103,7 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
-            <h3 class="mb-0">TU Wien</h3>
+            <h3 class="mb-0"><a href="https://www.tuwien.at/" target="_blank">TU Wien</a></h3>
             <div class="subheading mb-3">Bachelor of Science in Software & Information Engineering</div>
             <p>Coursework: Programming; OOP; MVC; Databases; Algorithms & Data structures; Operating Systems; Distributed Systems; Software Engineering; Computer Architecture; Calculus III.</p>
             <p>Bachelor’s Thesis title: <a href="https://github.com/FilipRy/BachelorThesis" target="_blank">Model based testing of cloud based social networks</a></p>
@@ -125,7 +125,7 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Software Engineer, Part-time</h3>
-            <div class="subheading mb-3">Siemens Healthineers, Slovakia</div>
+            <div class="subheading mb-3"><a href="https://www.siemens-healthineers.com/" target="_blank">Siemens Healthineers, Bratislava, Slovakia</a></div>
             <p>SKB (Services Knowledge Base): a desktop application for technicians to look up manuals of medical devices</p>
             <ul>
               <li>Implemented features to enhance downloading and removing the manuals by employing techniques of asynchronous programming.</li>
@@ -142,7 +142,7 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Tutor, E-Commerce lecture</h3>
-            <div class="subheading mb-3">TU Wien</div>
+            <div class="subheading mb-3"><a href="https://www.tuwien.at/" target="_blank">TU Wien</a></div>
             <ul>
               <li>Created assignment for students, according to instructors of professor, to develop a tool to handle failures and manage SLAs in emulated edge data-centers.</li>
               <li>Supervised 30 students in the development of the tool and Led students’ presentations, in which the students showed outcome of their works.</li>
@@ -157,7 +157,7 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
             <h3 class="mb-0">Tutor, Multimedia lecture</h3>
-            <div class="subheading mb-3">TU Wien</div>
+            <div class="subheading mb-3"><a href="https://www.tuwien.at/" target="_blank">TU Wien</a></div>
             <ul>
               <li>Hold lectures about SVN and Persistence in Android.</li>
               <li>Supervised 30 students in the lab part, in which their task was to implement a 2D arcade game on Android platform.</li>
@@ -180,6 +180,58 @@
         <h2 class="mb-5">Software Projects</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Live Traffic Monitoring</h3>
+            <div class="subheading mb-3">Motivation</div>
+            <p> Recently, the stream processing and messaging platforms are becoming very popular. Therefore, I decided to improve my skills and build a small project, which utilizes those platforms. </p>
+            <p>Live Traffic Monitoring is a simple real time app to monitor traffic conditions. The app receives data streams from emulated traffic sensors, which count the number of vehicles on the roads. Since I don't have access to any realtime data streams I utilized the <a href="http://iot.ee.surrey.ac.uk:8080/datasets.html#traffic" target="_blank">traffic dataset-1</a>, provided by <a href="http://iot.ee.surrey.ac.uk:8080/index.html" target="_blank">CityPulse Dataset Collection</a>, which contain all real traffic data collected by the real sensors from February till June in 2014 in <a href="https://en.wikipedia.org/wiki/Aarhus" target="_blank">Aarhus</a>. The Live Traffic Monitoring application emulates the traffic sensors, processes the data streams and visualizes the traffic conditions on the map. Beside that, it computes the most utilized roads during a day.
+            </p>
+            <div class="subheading mb-3">Overview</div>
+            <ul>
+              <li>Developed a realtime application to monitor traffic conditions on the roads.</li>
+              <li>Used Apache Strom to process data streams originating from IoT devices (sensors on the road).</li>
+              <li>Utilized Apache Kafka as a messaging platform between the IoT devices and Apache Storm topology.</li>
+              <li>Measured throughput of the application: TODO</li>
+            </ul>
+            <div class="subheading mb-3">Utilized</div>
+              <p>Java, Gradle, Apache Kafka, Apache Storm, MongoDB, Docker, Git, NodeJS</p>
+            <div class="subheading mb-3">Architectural Overview</div>
+
+                <div>
+                  <a href="https://raw.githubusercontent.com/FilipRy/LiveTrafficMonitoring/master/StreamProcessing/assets/live_traffic_monitoring.png" class="d-block mb-4 h-100" target="_blank">
+                      <img class="img-fluid img-thumbnail" src="https://raw.githubusercontent.com/FilipRy/LiveTrafficMonitoring/master/StreamProcessing/assets/live_traffic_monitoring.png" alt="">
+                  </a>
+                </div>
+
+            <div class="subheading mb-3"> <a href="https://github.com/FilipRy/LiveTrafficMonitoring" target="_blank">Source code</a></div>
+            <div class="subheading mb-3">Screenshots</div>
+
+              <div class="row text-center text-lg-left">
+
+                <div class="col-lg-4 col-md-6 col-6">
+                  <a href="https://raw.githubusercontent.com/FilipRy/LiveTrafficMonitoring/master/StreamProcessing/assets/dashboard.png" class="d-block mb-4 h-500" target="_blank">
+                        <img class="img-fluid img-thumbnail" width="500px" src="https://raw.githubusercontent.com/FilipRy/LiveTrafficMonitoring/master/StreamProcessing/assets/dashboard.png" alt="">
+                  </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-6">
+                  <a href="https://github.com/FilipRy/LiveTrafficMonitoring/raw/master/StreamProcessing/assets/demo.gif" class="d-block mb-4 h-500" target="_blank">
+                        <img class="img-fluid img-thumbnail" width="500px" src="https://github.com/FilipRy/LiveTrafficMonitoring/raw/master/StreamProcessing/assets/demo.gif" alt="">
+                  </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-6">
+                  <a href="img/storm.png" class="d-block mb-4 h-500" target="_blank">
+                        <img class="img-fluid img-thumbnail" width="500px" src="img/storm.png" alt="">
+                  </a>
+                </div>
+
+              </div>
+
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
             <h3 class="mb-0">Versu</h3>
             <div class="subheading mb-3">Motivation</div>
@@ -297,7 +349,7 @@
           <div class="resume-content">
             <h3 class="mb-0">Save Flappy Bird</h3>
             <div class="subheading mb-3">Motivation</div>
-            <p>Before implementing Save Flappy Bird I already had some experience in Java and Android and I was curious about game development. Also it wasn't clear to me how does cross-platform frameworks work. Therefore, I googled for a cross-platform game development frameworks and found <a href="http://www.kilobolt.com/zombie-bird-tutorial-flappy-bird-remake.html" target="_blank">this tutorial</a> by Kilobolt. The tutorial explains how to implement Flappy bird game on Android, desktop, iOS and Web from scratch. I used the code from the tutorial as a codebase for the Save Flappy Bird game.</p>
+            <p>Before implementing Save Flappy Bird I already had some experience in Java and Android and I was curious about game development. Also it wasn't clear to me how do cross-platform frameworks work. Therefore, I googled for a cross-platform game development frameworks and found <a href="http://www.kilobolt.com/zombie-bird-tutorial-flappy-bird-remake.html" target="_blank">this tutorial</a> by Kilobolt. The tutorial explains how to implement Flappy bird game on Android, desktop, iOS and Web from scratch by utilizing a cross-platform framework. I used the code from the tutorial as a codebase for the Save Flappy Bird game.</p>
             <div class="subheading mb-3">Overview</div>
             <ul>
               <li>Developed a game in Java for Android, desktop and web by utilizing libGDX - a cross-platform game development framework.</li>
@@ -402,6 +454,13 @@
                       UML</li>
                   </ul>
                 </div>
+                <div class="col-sm">
+                  <ul class="fa-ul mb-0">
+                      <li>
+                      <i class="fa-li fa fa-check"></i>
+                      Apache Kafka</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
@@ -447,6 +506,17 @@
                       <li>
                         <i class="fa-li fa fa-check"></i>
                         Logstash</li>
+                      <li>
+                    </ul>
+                  </div>
+                  <div class="col-sm">
+                    <ul class="fa-ul mb-0">
+                      <li>
+                        <i class="fa-li fa fa-check"></i>
+                        Apache Storm</li>
+                      <li>
+                        <i class="fa-li fa fa-check"></i>
+                        Gradle</li>
                       <li>
                     </ul>
                   </div>
